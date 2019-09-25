@@ -12,11 +12,10 @@ public class SingleShotController : MonoBehaviour
 
     private Material _material;
 
-    private float _timeActivated = 0;
+    private float _timeActivated = float.MinValue;
 
     public void ShowActivated()
     {
-        Debug.Log("Activated");
         _timeActivated = Time.time;
     }
 
@@ -28,7 +27,8 @@ public class SingleShotController : MonoBehaviour
 
     void Update()
     {
-        var desiredColor = Time.time - _timeActivated > _resetTime ? _originalColor : _activatedColor;
+        var desiredColor = Time.time - _timeActivated > _resetTime ? 
+            _originalColor : _activatedColor;
         if (_material.color != desiredColor)
         {
             _material.color = desiredColor;

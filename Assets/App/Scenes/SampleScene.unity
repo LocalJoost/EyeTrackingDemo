@@ -475,8 +475,11 @@ MonoBehaviour:
     id: 0
     description: None
     axisConstraint: 0
-  voiceSelect: []
-  dwellTimeInSec: 0.8
+  voiceSelect:
+  - id: 1
+    description: Select
+    axisConstraint: 2
+  dwellTimeInSec: 3
   onLookAtStart:
     m_PersistentCalls:
       m_Calls:
@@ -512,7 +515,7 @@ MonoBehaviour:
   onLookAway:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1524212557}
+      - m_Target: {fileID: 1191121079}
         m_MethodName: ShowActivated
         m_Mode: 1
         m_Arguments:
@@ -528,7 +531,7 @@ MonoBehaviour:
   onDwell:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1191121079}
+      - m_Target: {fileID: 1397880606}
         m_MethodName: ShowActivated
         m_Mode: 1
         m_Arguments:
@@ -575,6 +578,18 @@ MonoBehaviour:
 --- !u!114 &1191121079 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 9091346796061177001, guid: ed05c488878e13d4e9e6ba1b3a6412ce,
+    type: 3}
+  m_PrefabInstance: {fileID: 4207651390535863500}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03503e8f0dd56614c9800ca7bde3a3d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1397880606 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2011592200296588277, guid: ed05c488878e13d4e9e6ba1b3a6412ce,
     type: 3}
   m_PrefabInstance: {fileID: 4207651390535863500}
   m_PrefabAsset: {fileID: 0}
